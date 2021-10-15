@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = +prompt("nhập a :");
+    let number2 = +prompt("nhập b");
+    let number3 = +prompt("nhập c");
+    if (number1 > 0 && number2 > 0 && number3 > 0) {
+        if (number1 + number2 > number3 && number2 + number3 > number1 && number1 + number3 > number2) {
+            if (number1 === number2 && number1 === number3 && number2 === number3) {
+                alert(" a,b,c là tam giác đều")
+            } else {
+                alert(" a,b,c không phải là tam giác đều")
+            }
+        }else{
+            alert(" a,b,c không phải là 3 cạnh của tam giác")
+        }
+    } else {
+        alert("error")
+    }
+</script>
+</body>
+</html>

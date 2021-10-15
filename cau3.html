@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--câu lệnh nhận giá trị từ ô input : document.getElementbyId().value-->
+<p>số a</p>
+<input id="number1"><br>
+<p>số b</p>
+<input id="number2"><br><br>
+<button onclick="start()">click</button>
+<h1 id="result"></h1>
+</body>
+</html>
+<script>
+    function start() {
+        let a = document.getElementById('number1').value;
+        let b = document.getElementById('number2').value;
+        let area = a * b
+
+
+
+
+
+
+        document.getElementById('result').innerHTML = "S = " + area
+    }
+</script>

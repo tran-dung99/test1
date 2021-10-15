@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập vào</p>
+<label><input id="input" ></label>
+<button onclick="start()">click</button>
+<p id="canhA"></p>
+<p id="chuVi"></p>
+<p id="Dientich"></p>
+</body>
+</html>
+<script>
+    function start(){
+        let canh = +document.getElementById('input').value;
+        let chuVi = canh*4;
+        let dienTich = canh*canh
+        if(canh > 0) {
+            document.getElementById('canhA').innerHTML = "hình vuông có cạnh = " + canh
+            document.getElementById('chuVi').innerHTML = "hình vuông có chu vi = " + chuVi
+            document.getElementById('Dientich').innerHTML = "hình vuông có diện tích = " + dienTich
+        }
+
+    }
+</script>
